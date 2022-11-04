@@ -1,0 +1,11 @@
+.sun{
+    display: none;
+}
+
+#btndark.active .moon{
+    display: none;
+}
+
+#btndark.active .sun{
+    display: block;
+}

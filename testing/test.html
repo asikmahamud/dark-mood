@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="py-28 px-28">
+    <input type="text" id="input-name" class="border border-gray-100 focus:outline-none rounded-lg mr-3 px-3 py-1 shadow-lg shadow-gray-300">
+    <input type="text" id="input-email" class="border border-gray-100 focus:outline-none rounded-lg mr-3 px-3 py-1 shadow-lg shadow-gray-300">
+    <input type="password" id="input-password" class="border border-gray-100 focus:outline-none rounded-lg px-3 py-1 shadow-lg shadow-gray-300">
+
+    <button id="btn"
+        class="bg-blue-500 text-gray-100 shadow-lg shadow-gray-300 rounded-lg py-1 ml-8 px-2 font-semibold">submit</button>
+
+    <div class="mt-10">
+        <p class="mb-4 text-xl font-semibold">Name : <span  id="result-a"></span></p>
+        <p class="mb-4 text-xl font-semibold">Email : <span  id="result-b"></span></p>
+        <p class="mb-4 text-xl font-semibold">Password : <span  id="result-c"></span></p>
+    </div>
+
+    <script>
+        var btn = document.getElementById('btn')
+
+        var inputName = document.getElementById('input-name')
+        var inputEmail = document.getElementById('input-email')
+        var inputPassword = document.getElementById('input-password')
+
+        var resultA = document.getElementById('result-a')
+        var resultB = document.getElementById('result-b')
+        var resultC = document.getElementById('result-c')
+
+        btn.addEventListener('click', function () {
+
+            resultA.innerText = inputName.value;
+            resultB.innerText = inputEmail.value;
+            resultC.innerText = inputPassword.value;
+        })
+    </script>
+</body>
+
+</html>
